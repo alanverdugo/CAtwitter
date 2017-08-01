@@ -1,0 +1,16 @@
+{
+    "settings" : {
+        "headers" : "{'content-type': 'application/json'}",
+        "all_contracts_url" : "http://www.contratosabiertos.cdmx.gob.mx/api/contratos/todos",
+        "full_contract_url" : "http://www.contratosabiertos.cdmx.gob.mx/api/contrato/",
+        "last_update_contract_url" : "http://www.contratosabiertos.cdmx.gob.mx/api/contrato/actual/",
+        "" : "",
+        "" : "",
+        "" : "",
+        "" : "",
+        "" : "",
+        "" : "",
+        "" : "",
+        "" : ""
+    }
+}

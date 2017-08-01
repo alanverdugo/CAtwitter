@@ -35,8 +35,7 @@ import logging
 import requests
 
 
-# TODO: Change this to read from config.json
-headers = {'content-type': 'application/json'}
+
 home_dir = os.path.dirname(os.path.abspath(__file__))
 
 config_file = os.path.join(home_dir, "config.json")
@@ -47,9 +46,21 @@ logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s')
 log.setLevel(logging.INFO)
 
 
+def read_config():
+    '''
+        Read settings from config.json
+    '''
+    pass
+
+
 def main():
+    # First lets get a list of all the contracts and see which ones 
+    # have not been published yet.
+
+
+
     try:
-        api_response = requests.get(ca_url, headers=headers)
+        api_response = requests.get(all_contracts_url, headers=headers)
     except Exception as error:
         log.error("Unable to get response from API: {0}".format(error))
         sys.exit(1)
@@ -65,6 +76,14 @@ def main():
     except ValueError:
         log.warning("Empty result set. Request URL: {0}".format(ca_url))
         sys.exit(2)
+
+    # We found a new contract, let's parse it.
+
+
+    # With the parsed information call the tweet() function.
+
+
+    
 
 
 if __name__ == "__main__":
