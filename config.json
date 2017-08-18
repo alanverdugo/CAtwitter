@@ -1,16 +1,15 @@
 {
-    "settings" : {
-        "headers" : "{'content-type': 'application/json'}",
-        "all_contracts_url" : "http://www.contratosabiertos.cdmx.gob.mx/api/contratos/todos",
-        "full_contract_url" : "http://www.contratosabiertos.cdmx.gob.mx/api/contrato/",
-        "last_update_contract_url" : "http://www.contratosabiertos.cdmx.gob.mx/api/contrato/actual/",
-        "" : "",
-        "" : "",
-        "" : "",
-        "" : "",
-        "" : "",
-        "" : "",
-        "" : "",
-        "" : ""
+    "headers" : "{'content-type': 'application/json'}",
+    "URLs" : {
+        "all_contracts" : "http://www.contratosabiertos.cdmx.gob.mx/api/contratos/todos",
+        "full_contract" : "http://www.contratosabiertos.cdmx.gob.mx/api/contrato/",
+        "updated_contract" : "http://www.contratosabiertos.cdmx.gob.mx/api/contrato/actual/",
+        "user_friendly_full_contract" : "http://www.contratosabiertos.cdmx.gob.mx/contrato/"
+    },
+    "twitter" : {
+        "token" : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        "token_key" : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        "con_sec" : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        "con_sec_key" : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     }
 }
